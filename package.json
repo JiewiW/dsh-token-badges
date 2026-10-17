@@ -1,0 +1,23 @@
+{
+  "name": "dsh-token-badges",
+  "version": "0.1.0",
+  "description": "Token 徽章：用户提问气泡下方显示该消息输入到模型的 token 数；模型回答流底部常驻显示当前回合累计输出 token 数",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "license": "MIT"
+}

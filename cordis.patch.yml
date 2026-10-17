@@ -1,0 +1,9 @@
+# dsh-token-badges bundle patch: mount the dsh-token-badges plugin.
+#
+# Applied when this bundle appears in a profile's dsh.profile.bundles list.
+# Host half serves per-message token pricing via a webServer route; client half
+# renders two Chat node kinds: "user-token" under each user bubble and
+# "turn-token" pinned at the bottom of the model's answer stream.
+- insert:
+    - id: dsh-token-badges
+      name: dsh-token-badges
